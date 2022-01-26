@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="ohmyfood.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <script src="https://kit.fontawesome.com/043adcb9c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -51,8 +51,8 @@
                         </li>
                         <li>
                             <p class="number">3</p>
-                                <div class="textblock">
-                                    <div class="iconeliste">
+                                <div class="textblock" id="textepurple">
+                                    <div class="iconeliste" id="iconepurple">
                                         <i class="fa-solid fa-store"></i>
                                     </div>
                                         <p class="texteliste">Choisissez un restaurant</p>
@@ -61,19 +61,18 @@
                 </ul>
             </div>
         </section>
-        <main>
+<main>
+    <div id="listerestaurants">
             <h2>Restaurants</h2>
         <a href="Palettedugout.html">
             <div class="annonce">
-                <div class="foodimg">
+                <img src="images/restaurants/Restau1.jpg" class="foodimg">
                     <div class="new">
                         <p>Nouveau</p>
                     </div>
-                    <img src="images/restaurants/Restau1.jpg">
-                </div>
                 <div class="texte_annonce">
                         <h3>La palette du goût</h3>
-                        <p>Charonne</p>
+                        <p>Ménilmontant</p>
                     <div class="hearth">
                         <a href="#" class="button"><i class="fa-regular fa-heart"></i></a>
                     </div>
@@ -82,32 +81,26 @@
         </a>
         <a href="lanoteenchantee.html">
             <div class="annonce">
-                <div class="foodimg">
+                <img src="images/restaurants/Restau2.jpg" class="foodimg">
                     <div class="new">
                         <p>Nouveau</p>
                     </div>
-                    <img src="images/restaurants/Restau1.jpg">
-                </div>
                 <div class="texte_annonce">
-                        <h3>La palette du goût</h3>
+                        <h3>La note enchantée</h3>
                         <p>Charonne</p>
-                    <div class="hearth">
-                        <a href="#" class="button"><i class="fa-regular fa-heart"></i></a>
-                    </div>
+                        <a href="#" class="button"><i class="fa-regular fa-heart heart"></i></a>
                 </div>
             </div>
         </a>
         <a href="alafrancaise.html">
             <div class="annonce">
-                <div class="foodimg">
+                <img src="images/restaurants/Restau3.jpg" class="foodimg">
                     <div class="new">
                         <p>Nouveau</p>
                     </div>
-                    <img src="images/restaurants/Restau1.jpg">
-                </div>
                 <div class="texte_annonce">
-                        <h3>La palette du goût</h3>
-                        <p>Charonne</p>
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
                     <div class="hearth">
                         <a href="#" class="button"><i class="fa-regular fa-heart"></i></a>
                     </div>
@@ -116,29 +109,28 @@
         </a>
         <a href="ledelicedessens.html">
             <div class="annonce">
-                <div class="foodimg">
+                <img src="images/restaurants/Restau4.jpg" class="foodimg">
                     <div class="new">
                         <p>Nouveau</p>
                     </div>
-                    <img src="images/restaurants/Restau1.jpg">
-                </div>
                 <div class="texte_annonce">
-                        <h3>La palette du goût</h3>
-                        <p>Charonne</p>
+                        <h3>Le délices des sens</h3>
+                        <p>Folie-Méricourt</p>
                     <div class="hearth">
                         <a href="#" class="button"><i class="fa-regular fa-heart"></i></a>
                     </div>
                 </div>
             </div>
         </a>
-        </main>
+    </div>
+</main>
     </div>
 </body>
 <footer>
-    <img src="images/logo/ohmyfood.png">
+    <img src="images/logo/ohmyfood.png" class="logofooter">
     <ul>
-        <li><a href="#">Proposer un restaurant</a></li>
-        <li><a href="#">Devenir partenaire</a></li>
+        <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
         <li><a href="#">Mentions légales</a></li>
         <li><a href="#">Contact</a></li>
     </ul>

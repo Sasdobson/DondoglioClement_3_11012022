@@ -4,85 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La palette du goût</title>
+    <title>Le délices des sens</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="public/css/secondary.css">
     <script src="https://kit.fontawesome.com/043adcb9c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a href="Index.html" class="back"><i class="fa-solid fa-arrow-left"></i></a>
-            <div id="logofood">
-                <img src="images/logo/ohmyfood.png" id="logo">
-            </div>
+        <div id="head">
+            <a href="Index.html" class="back"><i class="fa-solid fa-arrow-left"></i></a>
+                <div id="logofood">
+                    <img src="images/logo/ohmyfood.png" id="logo">
+                </div>
+        </div>
         <div class="restaurant_img_fond">
             <img src="images/restaurants/Restau4.jpg" class="restaurant_img">
         </div>
     </header>
     <main>
-        <h1>À la française</h1>
-            <h2>Entrées</h2>
-                <div class="menu">
+        <div class="titre_restaurant">
+            <h1>Le délice des sens</h1>
+                <div class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+        </div>
+            <h2>ENTRÉES</h2>
+            <div class="menu">
+                <div class="plats">
                     <h3>Tartare de thon</h3>
-                    <p>Assaisonné au yuzu
-                    25€</p>
+                    <p>Assaisonné au yuzu</p>
+                </div>
+                    <div class="prix"><p>25€</p></div>
+            </div>
+                <div class="menu">
+                    <div class="plats">
+                        <h3>Bouchée de homard croustillant</h3>
+                        <p>Et sa farandole de petits légumes</p>
+                    </div>
+                        <div class="prix"><p>35€</p></div>
                 </div>
                 <div class="menu">
-                    <h3>Bouchée de homard croustillant </h3>
-                    <p>Et sa farandole de petits légumes
-                    35€</p>
+                    <div class="plats">
+                        <h3>Velouté de cèpes</h3>
+                        <p>Aux truffes</p>
+                    </div>
+                        <div class="prix"><p>20€</p></div>
                 </div>
-                <div class="menu">
-                    <h3>Velouté de cèpes</h3>
-                    <p>Aux truffes
-                    20€</p>
-                </div>
-        <h2>Plats</h2>
-                <div class="menu">
-                    <h3>Poulet rôti aux herbes de Provence </h3>
-                    <p>Et sa crème de truffe
-                    40€</p>
-                </div>
-                <div class="menu">
-                    <h3>Langouste rôtie </h3>
-                    <p>Et ses légumes de saison
-                    35€</p>in
-                </div>
-                <div class="menu">
-                    <h3>Côte de boeuf Angus</h3>
-                    <p>Et sa purée de panais
-                    44€</p>
-                </div>    
-        <h2>Desserts</h2>
-                <div class="menu">
-                    <h3>Farandole de desserts</h3>
-                    <p>Du chef
-                    18€</p>
-                </div>
-                <div class="menu">
-                    <h3>Crème brulée </h3> 
-                    <p>Revisité
-                    22€</p>
-                </div>
-                <div class="menu">
-                    <h3>Tiramisu </h3>
-                    <p>À la noisette
-                    23€</p>  
-                </div>
-            <button class="commande">Commander</button>
+        <h2>PLATS</h2>
+        <div class="menu">
+            <div class="plats">
+                <h3>Poulet rôti aux herbes de Provence</h3>
+                <p>Et sa crème de truffe</p>
+            </div>
+                <div class="prix"><p>40€</p></div>
+        </div>
+        <div class="menu">
+            <div class="plats">
+                <h3>Langouste rôtie</h3>
+                <p>Et ses légumes de saison</p>
+            </div>
+                <div class="prix"><p>35€</p></div>
+        </div>
+        <div class="menu">
+            <div class="plats">
+                <h3>Côte de boeuf Angus</h3>
+                <p>Et sa purée de panais</p>
+            </div>
+                <div class="prix"><p>44€</p></div>
+        </div>
+        <h2>DESSERTS</h2>
+        <div class="menu">
+            <div class="plats">
+                <h3>Farandole de desserts</h3>
+                <p>Du chef</p>
+            </div>
+                <div class="prix"><p>18€</p></div>
+        </div>
+        <div class="menu">
+            <div class="plats">
+                <h3>Crème brulée</h3>
+                <p>Revisitée</p>
+            </div>
+                <div class="prix"><p>22€</p></div>
+        </div>
+        <div class="menu">
+            <div class="plats">
+                <h3>Tiramisu</h3>
+                <p>À la noisette</p>
+            </div>
+                <div class="prix"><p>23€</p></div>
+        </div>
+            <a href="#" class="button" id="commande">Commander</a>
     </main>
     <footer>
-        <img src="images/logo/ohmyfood.png">
+        <img src="images/logo/ohmyfood.png" class="logofooter">
         <ul>
-            <li><a href="#">Proposer un restaurant</a></li>
-            <li><a href="#">Devenir partenaire</a></li>
+            <li><a href="#">
+                <div class="iconefooter">
+                    <p><i class="fa-solid fa-utensils"></i></p>
+                    <p>Proposer un restaurant</p></a></li>
+                </div>
+
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-</footer>
+    </footer>
 </body>
 </html>

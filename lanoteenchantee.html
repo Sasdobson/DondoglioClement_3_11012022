@@ -10,82 +10,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="public/css/secondary.css">
     <script src="https://kit.fontawesome.com/043adcb9c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a href="Index.html" class="back"><i class="fa-solid fa-arrow-left"></i></a>
-            <div id="logofood">
-                <img src="images/logo/ohmyfood.png" id="logo">
-            </div>
+        <div id="head">
+            <a href="Index.html" class="back"><i class="fa-solid fa-arrow-left"></i></a>
+                <div id="logofood">
+                    <img src="images/logo/ohmyfood.png" id="logo">
+                </div>
+        </div>
         <div class="restaurant_img_fond">
             <img src="images/restaurants/Restau2.jpg" class="restaurant_img">
         </div>
+    </header>
     <main>
-        <h1>La palette du goût</h1>
-            <h2>Entrées</h2>
-                <div class="menu">
+        <div class="titre_restaurant">
+            <h1>La note enchantée</h1>
+                <div class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+        </div>
+            <h2>ENTRÉES</h2>
+            <div class="menu">
+                <div class="plats">
                     <h3>Ravioles de foie gras</h3>
-                    <p>Accompagnés de leur crème à la truffe
-                    25€</p>
+                    <p>Accompagnés de leur crème à la truffe</p>
                 </div>
-                <div class="menu">
+                    <div class="prix"><p>25€</p></div>
+            </div>
+            <div class="menu">
+                <div class="plats">
                     <h3>Caviar osciètre</h3>
-                    <p>Sur blini à la farine de blé noir
-                    35€</p>
+                    <p>Sur blini à la farine de blé noir</p>
+                </div>
+                    <div class="prix"><p>35€</p></div>
+            </div>
+                <div class="menu">
+                    <div class="plats">
+                        <h3>Foie gras de canard mi-cuit</h3>
+                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                    </div>
+                        <div class="prix"><p>35€</p></div>
                 </div>
                 <div class="menu">
-                    <h3>Homard et espuma de potiron</h3>
-                        <p>Mariné aux zestes d'orange
-                        20€</p>
+                    <div class="plats">
+                        <h3>Oeuf au plat</h3>
+                        <p>Et ses copeaux de truffe noire</p>
+                    </div>
+                        <div class="prix"><p>20€</p></div>
                 </div>
-                <div class="menu">
-                    <h3>Foie gras de canard cuit entier</h3>
-                        <p>Confiture de figue en pain toasté
-                        35€</p>
-                </div>
-        <h2>Plats</h2>
-                <div class="menu">
-                    <h3>Noix de coquilles Saint-Jacques</h3>
-                    <p>Sur lit de purée de céleri-rave
-                    44€</p>
-                </div>
-                <div class="menu">
-                    <h3>Langoustine poêlée</h3>
-                    <p>Purée de patate douce
-                    35€</p>
-                </div>
-                <div class="menu">
-                    <h3>Mijoté de queue de boeuf</h3>
-                    <p>Et riz sauvage aux zest de citron
-                    44€</p>
-                </div>    
-        <h2>Desserts</h2>
-                <div class="menu">
-                    <h3>Macaron noisette et chocolat</h3>
-                    <p>Glace au caramel brun et sel de Guérande
-                    18€</p>
-                </div>
-                <div class="menu">
-                   <h3>Baba au rhum revisité</h3> 
-                    <p>Avec son coulis de citron
-                    22€</p>
-                </div>
-                <div class="menu">
-                    <h3>Tarte au citron meringuée</h3>
-                    <p>Destructurée
-                    23€</P>  
-                </div>
-            <button class="commande">Commander</button>
+        <h2>PLATS</h2>
+        <div class="menu">
+            <div class="plats">
+                <h3>Filet de boeuf aux herbes</h3>
+                <p>Accompagné de sa ribambelle de légumes</p>
+            </div>
+                <div class="prix"><p>40€</p></div>
+        </div>
+        <div class="menu">
+            <div class="plats">
+                <h3>Parmentier de queue de boeuf</h3>
+                <p>À la truffe noire sur sa purée de panais</p>
+            </div>
+                <div class="prix"><p>35€</p></div>
+        </div>
+        <div class="menu">
+            <div class="plats">
+                <h3>Filet de turbot</h3>
+                <p>Aux agrumes</p>
+            </div>
+                <div class="prix"><p>44€</p></div>
+        </div>
+        <h2>DESSERTS</h2>
+        <div class="menu">
+            <div class="plats">
+                <h3>Paris-Brest</h3>
+                <p>Revisité</p>
+            </div>
+                <div class="prix"><p>18€</p></div>
+        </div>
+        <div class="menu">
+            <div class="plats">
+                <h3>Macaron au chocolat d'exception</h3>
+                <p>Et glace à la vanille de Madagascar</p>
+            </div>
+                <div class="prix"><p>22€</p></div>
+        </div>
+        <div class="menu">
+            <div class="plats">
+                <h3>Mousse au chocolat </h3>
+                <p>Au piment d'Espelette et à la truffe noire</p>
+            </div>
+                <div class="prix"><p>23€</p></div>
+        </div>
+            <a href="#" class="button" id="commande">Commander</a>
     </main>
     <footer>
-        <img src="images/logo/ohmyfood.png">
+        <img src="images/logo/ohmyfood.png" class="logofooter">
         <ul>
-            <li><a href="#">Proposer un restaurant</a></li>
-            <li><a href="#">Devenir partenaire</a></li>
+            <li><a href="#">
+                <div class="iconefooter">
+                    <p><i class="fa-solid fa-utensils"></i></p>
+                    <p>Proposer un restaurant</p></a></li>
+                </div>
+
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-</footer>
+    </footer>
 </body>
+</html>
