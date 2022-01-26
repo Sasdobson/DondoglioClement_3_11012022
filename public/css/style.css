@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../polices//web fonts/Roboto_Regular_macroman/Roboto-Regular-webfont.woff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto_thin";
+  src: url("../../polices//web fonts/roboto_thin_macroman/Roboto-Thin-webfont.woff") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../font/Shrikhand-Regular.ttf") format("truetype");
+}
+.body {
+  font-family: "Roboto", serif;
+  font-size: large;
+}
+
+.ohmyfoodHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.ohmyfoodHead img {
+  width: 33%;
+}
+
+#page {
+  font-family: "Roboto", serif;
+  margin: auto;
+  width: 99%;
+}
+
+#logofood {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#logo {
+  width: 200px;
+  align-items: center;
+  margin: auto;
+}
+
+#localisation {
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #cecece;
+  background-color: #e9e9e9;
+}
+
+#logopin {
+  margin-top: 22px;
+  margin-right: 15px;
+}
+
+#section_1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#section_1 p {
+  font-size: 19px;
+}
+#section_1 h1 {
+  font-size: 28px;
+  width: 80%;
+  margin: auto;
+}
+#section_1 h2 {
+  margin-top: 100px;
+}
+
+#exploreur {
+  padding: 10px;
+  background: linear-gradient(176deg, #FF79DA, #9356DC);
+  color: white;
+  border: 0px;
+  text-decoration: none;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.45));
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+#section_1 h2 {
+  text-align: left;
+}
+
+#fonctionnement ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 230px;
+  padding: 0px;
+  margin: auto;
+  align-items: center;
+}
+
+#fonctionnement li {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.textblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0px 4px 13px -4px rgba(0, 0, 0, 0.58);
+  border-radius: 20px;
+  padding: 17px 17px 17px 25px;
+}
+.textblock #iconepurple {
+  color: #9356DC;
+}
+
+#textepurple {
+  background-color: #eee1ea;
+}
+
+.texteliste {
+  margin: 0;
+}
+
+.number {
+  color: white;
+  position: relative;
+  left: 15px;
+  background-color: #9356DC;
+  padding: 2px;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+}
+
+#listerestaurants {
+  height: 1300px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main h2 {
+  text-align: left;
+}
+
+.new p {
+  position: relative;
+  top: -180px;
+  right: 20px;
+  float: right;
+  background-color: #99E2D0;
+  width: 60px;
+  padding: 5px;
+  text-decoration: none;
+  color: #205549;
+}
+
+.annonce {
+  border-radius: 20px;
+  box-shadow: 0px 4px 13px -4px rgba(0, 0, 0, 0.58);
+}
+
+.foodimg {
+  position: inherit;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.texte_annonce {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin: auto;
+  width: 290px;
+}
+.texte_annonce p, .texte_annonce h3 {
+  font-family: "Roboto";
+  margin: 0%;
+}
+.texte_annonce a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-heart:hover {
+  color: #9356DC;
+  color: #9356DC;
+}
+
+footer {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.774);
+  align-items: left;
+  padding-left: 10px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer li a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+footer li {
+  margin-top: 5px;
+}
+footer .logofooter {
+  margin-top: 15px;
+  height: 15px;
+  width: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

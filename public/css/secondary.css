@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../polices//web fonts/Roboto_Regular_macroman/Roboto-Regular-webfont.woff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto_thin";
+  src: url("../../polices//web fonts/roboto_thin_macroman/Roboto-Thin-webfont.woff") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../font/Shrikhand-Regular.ttf") format("truetype");
+}
+#page {
+  font-family: "roboto", serif;
+  margin: auto;
+  width: 99%;
+}
+
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 2%;
+}
+#head .back {
+  width: 50%;
+  font-size: 130%;
+  font-weight: 600;
+}
+#head #logo {
+  margin-top: 5%;
+  height: 35px;
+}
+
+.restaurant_img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h2 {
+  border-bottom: 5px solid #99E2D0;
+  width: 50px;
+  font-family: "Roboto_thin";
+}
+
+.titre_restaurant {
+  font-family: "Shrikhand";
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.titre_restaurant .heart {
+  font-size: 155%;
+}
+
+main {
+  border-radius: 30px 30px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1300px;
+}
+
+.menu {
+  font-family: "Roboto";
+  box-shadow: 1px 3px 10px 2px #b6b5b5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 98%;
+  margin: auto;
+}
+
+.plats {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80px;
+  padding-left: 10px;
+}
+.plats h3 {
+  margin: 0;
+}
+.plats p {
+  margin: 0;
+}
+
+.prix {
+  justify-content: flex-end;
+  height: 80px;
+  padding-right: 10px;
+  font-weight: 600;
+}
+.prix p {
+  margin-top: 200%;
+}
+
+#commande {
+  padding: 10px;
+  background: linear-gradient(176deg, #FF79DA, #9356DC);
+  color: white;
+  border: 0px;
+  text-decoration: none;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.45));
+  border-radius: 20px;
+  width: 50%;
+  margin: 50px auto 20px auto;
+  font-size: 150%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.774);
+  align-items: left;
+  padding-left: 10px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer li a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+footer li {
+  margin-top: 5px;
+}
+footer .logofooter {
+  margin-top: 15px;
+  height: 20px;
+  width: 130px;
+}
+
+.iconefooter {
+  display: flex;
+  width: 375px;
+}
+
+@keyframes chargement {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu {
+  animation-name: chargement;
+  animation-duration: 2000ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+}
+
+/*# sourceMappingURL=secondary.css.map */
