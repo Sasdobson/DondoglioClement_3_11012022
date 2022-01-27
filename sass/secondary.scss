@@ -26,6 +26,28 @@ $box-shadow:0px 4px 13px -4px rgba(0,0,0,0.58);
     text-decoration: none;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.45));
 }
+@keyframes chargement
+
+  {
+   0% 
+   {
+     visibility: hidden;
+     transform: translateY(10vh);
+     opacity: 0;
+   }
+   100%
+   {
+     transform: translateY(0px);
+     opacity: 1;
+     visibility: visible;
+   }
+ }
+@mixin animation {
+  animation-name:chargement;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
 // ********************
 #page
   {
@@ -71,7 +93,12 @@ h2
   font-family:"Shrikhand";
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  border-radius: 25px;
+  top: 230px;
+  background-color: white;
     .heart
     {
       font-size: 155%;
@@ -83,8 +110,7 @@ main
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 1300px;
+    margin-top: 50px;
 }
 .menu 
  {
@@ -96,6 +122,7 @@ main
     height: 80px;
     width: 98%;
     margin: auto;
+    margin-bottom: 20px;
  }
 
 .plats
@@ -162,11 +189,12 @@ main
 				{
 					margin-top: 5px;
 				}
-        .logofooter
+        #application_name
         {
-          margin-top: 15px;
-          height: 20px;
-          width: 130px;
+          margin-top: 5px;
+          font-family: "Shrikhand";
+          color: white;
+          font-size: 120%;
         }
 }
 .iconefooter
@@ -175,24 +203,57 @@ main
    width: 375px;
  }
 
- @keyframes chargement
- {
-   0% 
-   {
-     transform: translateY(10vh);
-     opacity: 0;
-   }
-   100%
-   {
-     transform: translateY(0px);
-     opacity: 1;
-   }
- }
-
- .menu 
+ .animation1
       {
-        animation-name:chargement;
-        animation-duration: 2000ms;
-        animation-delay:200ms ;
-        animation-timing-function: ease-in-out;
+        @include animation;
+        animation-delay:300ms;
+      }
+
+.animation2
+      {
+        @include animation;
+        animation-delay: 500ms;
+      }
+      .animation3
+      {
+        @include animation;
+        animation-delay: 700ms;
+      }
+
+      .animation4
+      {
+        @include animation;
+        animation-delay: 900ms;
+      }
+
+      .animation5
+      {
+        @include animation;
+        animation-delay: 1100ms;
+      }
+
+      .animation6
+      {
+        @include animation;
+        animation-delay: 1300ms;
+      }
+      .animation7
+      {
+        @include animation;
+        animation-delay: 1500ms;
+      }
+      .animation8
+      {
+        @include animation;
+        animation-delay: 1700ms;
+      }
+      .animation9
+      {
+        @include animation;
+        animation-delay: 1900ms;
+      }
+      .animation10
+      {
+        @include animation;
+        animation-delay: 1900ms;
       }
