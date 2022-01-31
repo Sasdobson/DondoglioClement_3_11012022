@@ -190,12 +190,10 @@ opacity:0;
 
 #listerestaurants
 {
-  height: 1300px;
 	margin: auto;
 	text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 main h2
 {
@@ -219,8 +217,9 @@ main h2
 {
 	border-radius: 20px;
 	box-shadow:$box-shadow;
+	margin-bottom: 30px;
 }
-.foodimg
+.foodimg img
 {
   position: inherit;
 	height: 200px;
@@ -249,11 +248,6 @@ main h2
 			}
 }
 
-.fa-heart:hover
-{
-	color: $color_primary;
-	color: $color_primary;
-}
 
 footer
 {
@@ -278,11 +272,12 @@ footer
 				{
 					margin-top: 5px;
 				}
-				.logofooter
+				#application_name
 				{
-					margin-top: 15px;
-					height: 15px;
-					width: 100px;
+				  margin-top: 5px;
+				  font-family: "Shrikhand";
+				  color: white;
+				  font-size: 120%;
 				}
 }
 
@@ -309,4 +304,70 @@ footer
 	animation-duration: 5000ms;
   }
   
+  .fa-heart {
+	font-size: 34px;
+	margin-right: 24px;
+	background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 0;
+  }
   
+  .full {
+	text-decoration: none;
+  }
+  
+  .full:hover .fa-heart-o,
+  .full .fa-heart {
+	display: none;
+  }
+  
+  .full:hover .fa-heart {
+	display: inline;
+  }
+  
+  .fa-heart-o {
+	color: black;
+	font-size: 34px;
+	margin-right: 24px;
+  }
+
+  @media screen and (min-width: 768px)
+  {
+	#fonctionnement ul
+	  {
+		  display: flex;
+		  flex-direction: inherit;
+		  width: 85%;
+		  	li 
+			  {
+				  width: 30%;
+			  }
+		  .textblock
+		  {
+			  justify-content: space-evenly;
+		  }
+	  }
+	  #restaurants h2
+	  {
+		  text-align: center;
+		  justify-content: center;
+	  }
+	  #listerestaurants
+	{
+	margin: auto;
+	text-align: center;
+ 	display: flex;
+	 flex-direction: inherit;
+	 flex-wrap: wrap;
+	 justify-content: center;
+	 align-items: center;
+	 width: 98%;
+	}
+	.annonce
+	{
+		width: 45%;
+		margin-right: 40px;
+	}
+  }

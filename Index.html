@@ -28,7 +28,7 @@
                 </div>
             <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez les restaurants d'exception séléctionnés par nos soins.</p>
-                    <a href="#" class="button" id="exploreur"> Explorer nos restaurants</a>
+                    <a href="#" class="Heart" id="exploreur"> Explorer nos restaurants</a>
             <h2>Fonctionnement</h2>
             <div id="fonctionnement">
                 <ul>
@@ -63,63 +63,87 @@
             </div>
         </section>
 <main>
-    <div id="listerestaurants">
+        <div id="restaurants">
             <h2>Restaurants</h2>
+        </div>
+        <div id="listerestaurants">
         <a href="Palettedugout.html">
             <div class="annonce">
-                <img src="images/restaurants/Restau1.jpg" class="foodimg">
+                <div class="foodimg">
+                <img src="images/restaurants/Restau1.jpg" alt="foodimg">
                     <div class="new">
                         <p>Nouveau</p>
                     </div>
+                </div>
                 <div class="texte_annonce">
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
-                    <div class="hearth">
-                        <a href="#" class="button"><i class="fa-regular fa-heart"></i></a>
-                    </div>
+                        <div class="Heart">
+                            <a href="#" class="full">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
                 </div>
             </div>
         </a>
         <a href="lanoteenchantee.html">
             <div class="annonce">
-                <img src="images/restaurants/Restau2.jpg" class="foodimg">
+                <div class="foodimg">
+                <img src="images/restaurants/Restau2.jpg" alt="foodimg">
                     <div class="new">
                         <p>Nouveau</p>
                     </div>
+                </div>
                 <div class="texte_annonce">
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
-                        <a href="#" class="button"><i class="fa-regular fa-heart heart"></i></a>
+                        <div class="Heart">
+                            <a href="#" class="full">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
                 </div>
             </div>
         </a>
         <a href="alafrancaise.html">
             <div class="annonce">
-                <img src="images/restaurants/Restau3.jpg" class="foodimg">
+                <div class="foodimg">
+                <img src="images/restaurants/Restau3.jpg" alt="foodimg">
                     <div class="new">
                         <p>Nouveau</p>
                     </div>
+                </div>
                 <div class="texte_annonce">
                         <h3>À la française</h3>
                         <p>Cité Rouge</p>
-                    <div class="hearth">
-                        <a href="#" class="button"><i class="fa-regular fa-heart"></i></a>
-                    </div>
+                        <div class="Heart">
+                            <a href="#" class="full">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
                 </div>
             </div>
         </a>
         <a href="ledelicedessens.html">
             <div class="annonce">
-                <img src="images/restaurants/Restau4.jpg" class="foodimg">
+                <div class="foodimg">
+                <img src="images/restaurants/Restau4.jpg" alt="foodimg">
                     <div class="new">
                         <p>Nouveau</p>
                     </div>
+                </div>
                 <div class="texte_annonce">
                         <h3>Le délices des sens</h3>
                         <p>Folie-Méricourt</p>
-                    <div class="hearth">
-                        <a href="#" class="button"><i class="fa-regular fa-heart"></i></a>
-                    </div>
+                        <div class="Heart">
+                            <a href="#" class="full">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
                 </div>
             </div>
         </a>
@@ -128,7 +152,9 @@
     </div>
 </body>
 <footer class="content">
-    <img src="images/logo/ohmyfood.png" class="logofooter">
+    <div id="application_name">
+        <p>ohmyfood</p>
+    </div>
     <ul>
         <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
         <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
