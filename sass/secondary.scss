@@ -19,7 +19,7 @@ $box-shadow:0px 4px 13px -4px rgba(0,0,0,0.58);
 
 @mixin button
 {
-    padding: 10px;
+    padding: 13px;
     background: linear-gradient( 176deg,$color_secondary, $color_primary);
     color: white;
     border: 0px ;
@@ -78,6 +78,7 @@ $box-shadow:0px 4px 13px -4px rgba(0,0,0,0.58);
         width: 50%;
         font-size: 130%;
         font-weight: 600;
+        color: black;
     }
         #logo
         {
@@ -94,6 +95,7 @@ $box-shadow:0px 4px 13px -4px rgba(0,0,0,0.58);
 }
 h2 
 {
+  padding-bottom: 5px;
  border-bottom: 5px solid $color_tertiary;
  width: 50px;
  font-family: "Roboto_thin";
@@ -175,16 +177,15 @@ main
 }
 .menu:hover .hoverslide {
   position: relative;
-  width: 30%;
+  width: 20%;
   left: 0;
 }
 .menu:hover .check{
   animation-name: rotate;
-      animation-duration: 1s;
+      animation-duration: 0.5s;
       animation-timing-function: ease-in-out;
       animation-fill-mode: both;
 }
-
 
 .prix
 {
@@ -202,49 +203,74 @@ main
   {
     @include button;
     border-radius: 20px;
-	  width: 50%;
+	  width: 45%;
     margin: 50px auto 20px auto;
-    font-size: 150%;
+    font-size: 120%;
     text-align: center;
+    font-family: "roboto";
   }
   footer
-{
-	display: flex;
-	margin-top: 50px;
-	flex-direction: column;
-	background-color: rgba(0, 0, 0, 0.774);
-	align-items: left;
-	padding-left: 10px;
-		ul 
-		{
-			list-style-type: none;
-			padding: 0;
-		}
-			li a
-			{
-				margin-top: 10px;
-				text-decoration: none;
-				color: white;
-        display: flex;
-
-			}
-				li 
-				{
-					margin-top: 5px;
-				}
-        #application_name
+  {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.774);
+    align-items: left;
+    padding-left: 10px;
+    ul a
+    {
+      text-decoration: none;
+      color: white;
+      font-family: "roboto";
+    }
+      ul 
+      {
+        padding: 0;
+      }
+        li 
         {
-          margin-top: 5px;
-          font-family: "Shrikhand";
-          color: white;
-          font-size: 120%;
+          margin-bottom: 10px;
         }
-}
-.iconefooter
- {
-   display: flex;
-   width: 375px;
- }
+            #application_name
+            {
+            margin-top: 5px;
+            font-family: "Shrikhand";
+            color: white;
+            font-size: 120%;
+            }
+  }
+  .blockfooter
+  {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 200px;
+    font-family: "roboto";
+    p 
+    {
+      margin: 0;
+    }
+      .iconefooter
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
+       .texteiconefooter
+       {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+           a 
+           {
+            text-decoration: none;
+            color: white;
+           }
+       }
+  }
 
  .animation1
       {

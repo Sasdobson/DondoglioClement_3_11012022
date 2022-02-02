@@ -47,6 +47,7 @@
   width: 50%;
   font-size: 130%;
   font-weight: 600;
+  color: black;
 }
 #head #logo {
   margin-top: 5%;
@@ -61,6 +62,7 @@
 }
 
 h2 {
+  padding-bottom: 5px;
   border-bottom: 5px solid #99E2D0;
   width: 50px;
   font-family: "Roboto_thin";
@@ -137,13 +139,13 @@ main {
 
 .menu:hover .hoverslide {
   position: relative;
-  width: 30%;
+  width: 20%;
   left: 0;
 }
 
 .menu:hover .check {
   animation-name: rotate;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
@@ -159,17 +161,18 @@ main {
 }
 
 #commande {
-  padding: 10px;
+  padding: 13px;
   background: linear-gradient(176deg, #FF79DA, #9356DC);
   color: white;
   border: 0px;
   text-decoration: none;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.45));
   border-radius: 20px;
-  width: 50%;
+  width: 45%;
   margin: 50px auto 20px auto;
-  font-size: 150%;
+  font-size: 120%;
   text-align: center;
+  font-family: "roboto";
 }
 
 footer {
@@ -180,18 +183,16 @@ footer {
   align-items: left;
   padding-left: 10px;
 }
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-footer li a {
-  margin-top: 10px;
+footer ul a {
   text-decoration: none;
   color: white;
-  display: flex;
+  font-family: "roboto";
+}
+footer ul {
+  padding: 0;
 }
 footer li {
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 footer #application_name {
   margin-top: 5px;
@@ -200,9 +201,32 @@ footer #application_name {
   font-size: 120%;
 }
 
-.iconefooter {
+.blockfooter {
   display: flex;
-  width: 375px;
+  justify-content: space-between;
+  height: 60px;
+  width: 200px;
+  font-family: "roboto";
+}
+.blockfooter p {
+  margin: 0;
+}
+.blockfooter .iconefooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.blockfooter .texteiconefooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blockfooter .texteiconefooter a {
+  text-decoration: none;
+  color: white;
 }
 
 .animation1 {

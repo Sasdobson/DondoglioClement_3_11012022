@@ -49,9 +49,11 @@
 }
 
 #page {
-  font-family: "Roboto", serif;
   margin: auto;
   width: 99%;
+}
+#page p, #page h2, #page h1, #page h3 {
+  font-family: "Roboto", serif;
 }
 
 #logofood {
@@ -71,6 +73,7 @@
   justify-content: center;
   border-top: 3px solid #cecece;
   background-color: #e9e9e9;
+  margin-bottom: 30px;
 }
 
 #logopin {
@@ -82,7 +85,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 #section_1 p {
   font-size: 19px;
@@ -93,7 +96,8 @@
   margin: auto;
 }
 #section_1 h2 {
-  margin-top: 100px;
+  font-weight: 600;
+  margin-top: 70px;
 }
 
 #exploreur {
@@ -108,6 +112,12 @@
   margin: auto;
 }
 
+#exploreur:hover {
+  background: linear-gradient(176deg, #d9b0e9, #eb6deb);
+  color: whitesmoke;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.45));
+}
+
 #section_1 h2 {
   text-align: left;
 }
@@ -115,7 +125,6 @@
 #fonctionnement ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 230px;
   padding: 0px;
   margin: auto;
@@ -124,15 +133,19 @@
 
 #fonctionnement li {
   display: flex;
-  width: 80%;
-  justify-content: space-evenly;
+  width: 98%;
+  margin-bottom: 20px;
   align-items: center;
+  justify-content: space-evenly;
+}
+#fonctionnement li .iconegrey {
+  color: grey;
 }
 
 .textblock {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   box-shadow: 0px 4px 13px -4px rgba(0, 0, 0, 0.58);
   border-radius: 20px;
@@ -148,6 +161,7 @@
 
 .texteliste {
   margin: 0;
+  font-weight: 600;
 }
 
 .number {
@@ -159,6 +173,7 @@
   border-radius: 100%;
   width: 22px;
   height: 22px;
+  font-weight: 400;
 }
 
 #listerestaurants {
@@ -178,10 +193,12 @@ main h2 {
   right: 20px;
   float: right;
   background-color: #99E2D0;
-  width: 60px;
+  width: 65px;
   padding: 5px;
   text-decoration: none;
-  color: #205549;
+  color: #308370;
+  font-weight: 600;
+  justify-content: center;
 }
 
 .annonce {
@@ -192,7 +209,7 @@ main h2 {
 
 .foodimg img {
   position: inherit;
-  height: 200px;
+  height: 180px;
   border-radius: 20px 20px 0px 0px;
   width: 100%;
   object-fit: cover;
@@ -201,11 +218,13 @@ main h2 {
 .texte_annonce {
   text-align: left;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 50px;
   margin: auto;
   width: 290px;
+  color: black;
 }
 .texte_annonce p, .texte_annonce h3 {
   font-family: "Roboto";
@@ -216,6 +235,13 @@ main h2 {
   color: black;
 }
 
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 footer {
   display: flex;
   margin-top: 50px;
@@ -224,17 +250,15 @@ footer {
   align-items: left;
   padding-left: 10px;
 }
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-footer li a {
-  margin-top: 10px;
+footer ul a {
   text-decoration: none;
   color: white;
 }
+footer ul {
+  padding: 0;
+}
 footer li {
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 footer #application_name {
   margin-top: 5px;
@@ -243,32 +267,35 @@ footer #application_name {
   font-size: 120%;
 }
 
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 70px;
-  height: 70px;
-  margin: -36px 0 0 -36px;
-  border: 12px solid #FF79DA;
-  border-radius: 50%;
-  border-top: 12px solid #9356DC;
-  border-bottom: 12px solid #9356DC;
-  animation: spin 5s;
-  animation-duration: 4900ms;
-  animation-fill-mode: forwards;
+.blockfooter {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 175px;
 }
-
-.content {
-  position: relative;
-  -webkit-animation-name: content;
-  -webkit-animation-duration: 1s;
-  animation-name: content;
-  animation-duration: 5000ms;
+.blockfooter p {
+  margin: 0;
+}
+.blockfooter .iconefooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.blockfooter .texteiconefooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blockfooter .texteiconefooter a {
+  text-decoration: none;
+  color: white;
 }
 
 .fa-heart {
-  font-size: 34px;
+  font-size: 24px;
   margin-right: 24px;
   background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
   background-clip: text;
@@ -292,7 +319,7 @@ footer #application_name {
 
 .fa-heart-o {
   color: black;
-  font-size: 34px;
+  font-size: 24px;
   margin-right: 24px;
 }
 

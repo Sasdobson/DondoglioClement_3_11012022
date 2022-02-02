@@ -26,7 +26,7 @@ $box-shadow:0px 4px 13px -4px rgba(0,0,0,0.58);
   
 @mixin button
 {
-    padding: 10px;
+    padding: 12px;
     background: linear-gradient( 176deg,$color_secondary, $color_primary);
     color: white;
     border: 0px ;
@@ -75,9 +75,11 @@ opacity:0;
   }
   #page
   {
-    font-family: "Roboto", serif;
     margin: auto;
     width: 99%;
+		p, h2, h1, h3{
+			font-family: "Roboto", serif;
+		}
   }
   #logofood
 {
@@ -97,6 +99,7 @@ opacity:0;
 	justify-content: center;
 	border-top: 3px solid rgb(206, 206, 206);
 	background-color:rgb(233, 233, 233);
+	margin-bottom: 30px;
 }
 #logopin
 {
@@ -108,7 +111,7 @@ opacity:0;
 	display:flex;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 		p
 		{
 			font-size: 19px;
@@ -121,7 +124,9 @@ opacity:0;
 			}
 				h2 
 				{
-					margin-top: 100px
+					font-weight: 600;
+					margin-top: 70px
+					
 				}
 }
 
@@ -132,6 +137,12 @@ opacity:0;
 	  width: 50%;
 	  margin: auto;
   }
+  #exploreur:hover 
+  {
+	background: linear-gradient( 176deg,rgb(217, 176, 233), rgb(235, 109, 235));
+	color: whitesmoke;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.45));
+  }
   #section_1 h2
 {
 	text-align: left;
@@ -141,7 +152,6 @@ opacity:0;
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	height: 230px;
 	padding: 0px;
 	margin: auto;
@@ -150,15 +160,20 @@ opacity:0;
 #fonctionnement li
 {
 	display: flex;
-	width: 80%;
-	justify-content: space-evenly;
+	width: 98%;
+	margin-bottom: 20px;
 	align-items: center;
+	justify-content: space-evenly;
+			.iconegrey
+			{
+				color: grey;
+			}
 }
 .textblock
 {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 100%;
 	box-shadow:$box-shadow;
 	border-radius: 20px;
@@ -175,6 +190,7 @@ opacity:0;
 .texteliste
 {
 	margin: 0;
+	font-weight: 600;
 }
 .number
 {
@@ -186,6 +202,7 @@ opacity:0;
 	border-radius: 100%;
 	width: 22px;
 	height: 22px;
+	font-weight: 400;
 }
 
 #listerestaurants
@@ -207,10 +224,12 @@ main h2
   right: 20px;
 	float: right;
 	background-color: $color_tertiary;
-	width: 60px;
+	width: 65px;
   padding: 5px;
 	text-decoration: none;
-	color: #205549;
+	color: #308370;
+	font-weight: 600;
+	justify-content: center;
 }
 
 .annonce
@@ -218,11 +237,12 @@ main h2
 	border-radius: 20px;
 	box-shadow:$box-shadow;
 	margin-bottom: 30px;
+
 }
 .foodimg img
 {
   position: inherit;
-	height: 200px;
+	height: 180px;
 	border-radius: 20px 20px 0px 0px;
 	width: 100%;
 	object-fit: cover;
@@ -231,11 +251,13 @@ main h2
 {
 	text-align: left;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	height: 50px;
 	margin: auto;
 	width: 290px;
+	color: black;
 		p,h3
 		{
 			font-family: "Roboto";
@@ -248,7 +270,13 @@ main h2
 			}
 }
 
-
+.description
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
 footer
 {
 	display: flex;
@@ -257,55 +285,84 @@ footer
 	background-color: rgba(0, 0, 0, 0.774);
 	align-items: left;
 	padding-left: 10px;
+	ul a
+	{
+		text-decoration: none;
+		color: white;
+	}
 		ul 
 		{
-			list-style-type: none;
 			padding: 0;
 		}
-			li a
+			li 
 			{
-				margin-top: 10px;
-				text-decoration: none;
-				color: white;
+				margin-bottom: 10px;
 			}
-				li 
-				{
+					#application_name
+					{
 					margin-top: 5px;
-				}
-				#application_name
-				{
-				  margin-top: 5px;
-				  font-family: "Shrikhand";
-				  color: white;
-				  font-size: 120%;
-				}
+					font-family: "Shrikhand";
+					color: white;
+					font-size: 120%;
+					}
+}
+.blockfooter
+{
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	width: 175px;
+	p 
+	{
+		margin: 0;
+	}
+		.iconefooter
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			text-align: center;
+			color: white;
+		}
+		 .texteiconefooter
+		 {
+			 display: flex;
+			 flex-direction: column;
+			 justify-content: space-between;
+			 	a 
+				 {
+					text-decoration: none;
+					color: white;
+				 }
+		 }
 }
 
-#loader {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 70px;
-	height: 70px;
-	margin: -36px 0 0 -36px;
-	border: 12px solid $color_secondary;
-	border-radius: 50%;
-	border-top: 12px solid $color_primary;
-	border-bottom: 12px solid $color_primary;
-	animation: spin 5s;
-	animation-duration: 4900ms;
-	animation-fill-mode: forwards;
-  }
-  .content {
-	position: relative;
-	-webkit-animation-name: content;
-	-webkit-animation-duration: 1s;
-	animation-name: content;
-	animation-duration: 5000ms;
-  }
+// #loader {
+// 	position: absolute;
+// 	left: 50%;
+// 	top: 50%;
+// 	width: 70px;
+// 	height: 70px;
+// 	margin: -36px 0 0 -36px;
+// 	border: 12px solid $color_secondary;
+// 	border-radius: 50%;
+// 	border-top: 12px solid $color_primary;
+// 	border-bottom: 12px solid $color_primary;
+// 	animation: spin 5s;
+// 	animation-duration: 4900ms;
+// 	animation-fill-mode: forwards;
+//   }
+//   .content {
+// 	position: relative;
+// 	-webkit-animation-name: content;
+// 	-webkit-animation-duration: 1s;
+// 	animation-name: content;
+// 	animation-duration: 5000ms;
+//   }
   
   .fa-heart {
-	font-size: 34px;
+	font-size: 24px;
 	margin-right: 24px;
 	background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
 	background-clip: text;
@@ -329,7 +386,7 @@ footer
   
   .fa-heart-o {
 	color: black;
-	font-size: 34px;
+	font-size: 24px;
 	margin-right: 24px;
   }
 
