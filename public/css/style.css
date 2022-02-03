@@ -31,6 +31,10 @@
     opacity: 0;
   }
 }
+a {
+  text-decoration: none;
+}
+
 .body {
   font-family: "Roboto", serif;
   font-size: large;
@@ -101,12 +105,13 @@
 }
 
 #exploreur {
-  padding: 10px;
+  padding: 12px;
   background: linear-gradient(176deg, #FF79DA, #9356DC);
   color: white;
   border: 0px;
   text-decoration: none;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.45));
+  font-family: "roboto";
   border-radius: 20px;
   width: 50%;
   margin: auto;
@@ -120,6 +125,7 @@
 
 #section_1 h2 {
   text-align: left;
+  margin-left: 5.6px;
 }
 
 #fonctionnement ul {
@@ -140,6 +146,7 @@
 }
 #fonctionnement li .iconegrey {
   color: grey;
+  font-size: 110%;
 }
 
 .textblock {
@@ -173,10 +180,10 @@
   border-radius: 100%;
   width: 22px;
   height: 22px;
-  font-weight: 400;
 }
 
 #listerestaurants {
+  width: 97%;
   margin: auto;
   text-align: center;
   display: flex;
@@ -185,17 +192,16 @@
 
 main h2 {
   text-align: left;
+  margin-left: 5.6px;
 }
 
 .new p {
-  position: relative;
-  top: -180px;
-  right: 20px;
+  position: absolute;
+  right: 5%;
   float: right;
   background-color: #99E2D0;
   width: 65px;
   padding: 5px;
-  text-decoration: none;
   color: #308370;
   font-weight: 600;
   justify-content: center;
@@ -219,7 +225,6 @@ main h2 {
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   height: 50px;
   margin: auto;
@@ -228,7 +233,7 @@ main h2 {
 }
 .texte_annonce p, .texte_annonce h3 {
   font-family: "Roboto";
-  margin: 0%;
+  margin: 0;
 }
 .texte_annonce a {
   text-decoration: none;
@@ -238,8 +243,9 @@ main h2 {
 .description {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-decoration: none;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -256,6 +262,8 @@ footer ul a {
 }
 footer ul {
   padding: 0;
+  margin-left: 15px;
+  list-style-type: none;
 }
 footer li {
   margin-bottom: 10px;
@@ -265,6 +273,7 @@ footer #application_name {
   font-family: "Shrikhand";
   color: white;
   font-size: 120%;
+  margin-left: 15px;
 }
 
 .blockfooter {
@@ -272,6 +281,7 @@ footer #application_name {
   justify-content: space-between;
   height: 60px;
   width: 175px;
+  margin-left: 15px;
 }
 .blockfooter p {
   margin: 0;
@@ -290,8 +300,31 @@ footer #application_name {
   justify-content: space-between;
 }
 .blockfooter .texteiconefooter a {
-  text-decoration: none;
   color: white;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  margin: -36px 0 0 -36px;
+  border: 12px solid #FF79DA;
+  border-radius: 50%;
+  border-top: 12px solid #9356DC;
+  border-bottom: 12px solid #9356DC;
+  animation: spin 5s;
+  animation-duration: 4900ms;
+  animation-fill-mode: forwards;
+}
+
+.content {
+  position: relative;
+  -webkit-animation-name: content;
+  -webkit-animation-duration: 1s;
+  animation-name: content;
+  animation-duration: 5000ms;
 }
 
 .fa-heart {
@@ -324,10 +357,19 @@ footer #application_name {
 }
 
 @media screen and (min-width: 768px) {
+  #section_1 {
+    margin-bottom: 20px;
+  }
+  #section_1 h2 {
+    text-align: center;
+  }
+
   #fonctionnement ul {
     display: flex;
     flex-direction: inherit;
-    width: 85%;
+    width: 100%;
+    justify-content: center;
+    height: 150px;
   }
   #fonctionnement ul li {
     width: 30%;
@@ -339,6 +381,7 @@ footer #application_name {
   #restaurants h2 {
     text-align: center;
     justify-content: center;
+    margin-bottom: 50px;
   }
 
   #listerestaurants {
@@ -355,6 +398,16 @@ footer #application_name {
   .annonce {
     width: 45%;
     margin-right: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .texte_annonce {
+    margin-left: 10px;
+  }
+
+  .new {
+    position: relative;
   }
 }
 
