@@ -245,7 +245,7 @@ footer #application_name {
 .blockfooter {
   display: flex;
   justify-content: space-between;
-  height: 60px;
+  height: 45px;
   width: 200px;
   font-family: "roboto";
   margin-left: 15px;
